@@ -1,10 +1,11 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 
 /* RESET CSS */
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +17,6 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 34px;
 }
 
@@ -27,30 +27,59 @@ nav p{
     color: #686868;
 }
 
-#possibilities{
+#all{
     display: flex;
-    align-items: center;
-    margin-left: 41.26px;
-    gap: 40px;
 }
 
-#log{
+#logo{
+    margin-left: 41.26px;
+    margin-top: 10px;
+}
+
+#features {
+    margin-left: 62.24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features svg{
+    margin-left: 9px;
+}
+
+#company {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#company svg{
+    margin-left: 9px;
+}
+
+#other{
+    display: flex;
+    align-items: center;
+}
+
+#other p{
+    margin-left: 40px;
+}
+
+
+/* LOGIN REGISTER */
+#login_register{
     display: flex;
     align-items: center;
     margin-right: 40px;
 }
 
-.arrow_down{
-    display: flex;
-    align-items: center;
-}
-
-.arrow_down svg{
-    margin-left: 9px;
+#login{
+    margin-right: 40px;
 }
 
 #register{
-    margin-left: 40px;
     border: 1.5px solid #686868;
     border-radius: 14px;
     width: 104px;
@@ -60,4 +89,62 @@ nav p{
     align-items: center;
 }
 
+/* MAIN */
 
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container_left{
+    margin-top: 160px;
+    margin-left: 165px;
+    width: 540px;
+}
+
+#container_left h3{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.11111px;
+    color: #151515;
+}
+
+#container_left p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+    height: 84px;
+    color: #686868;
+    margin-top: 48px;
+}
+
+#container_left button{
+    border: 0;
+    width: 163px;
+    height: 56px;
+    background-color: #151515;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #FAFAFA;
+    margin-top: 51px;
+}
+
+#sponsors{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 108px;
+}
+
+#container_right img{
+    width: 480px;
+    height: 640px;
+    margin-top: 55px;
+    margin-right: 130px;
+}
