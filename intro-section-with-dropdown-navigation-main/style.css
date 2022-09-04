@@ -1,0 +1,63 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+}
+
+nav p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+}
+
+#possibilities{
+    display: flex;
+    align-items: center;
+    margin-left: 41.26px;
+    gap: 40px;
+}
+
+#log{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.arrow_down{
+    display: flex;
+    align-items: center;
+}
+
+.arrow_down svg{
+    margin-left: 9px;
+}
+
+#register{
+    margin-left: 40px;
+    border: 1.5px solid #686868;
+    border-radius: 14px;
+    width: 104px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
