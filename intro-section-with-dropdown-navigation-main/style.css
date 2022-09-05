@@ -34,6 +34,12 @@ nav p:hover{
 
 #all{
     display: flex;
+    justify-content: space-between;
+    width: 87%;
+}
+
+#features_to_about{
+    display: flex;
 }
 
 #logo{
@@ -42,7 +48,6 @@ nav p:hover{
 }
 
 #features {
-    margin-left: 62.24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +78,6 @@ nav p:hover{
 #other p{
     margin-left: 40px;
 }
-
 
 /* LOGIN REGISTER */
 #login_register{
@@ -121,6 +125,10 @@ main{
     color: #151515;
 }
 
+#make_remote_work{
+    width: 530px;
+}
+
 #container_left p{
     font-weight: 500;
     font-size: 18px;
@@ -160,11 +168,18 @@ main{
     margin-top: 108px;
 }
 
-#container_right img{
+#desktop_img{
     width: 480px;
     height: 640px;
     margin-top: 55px;
     margin-right: 130px;
+    display: flex;
+}
+
+#mobile_img{
+    display: none;
+    width: 375px;
+    height: 281.25px;
 }
 
 /* TODO LIST */
@@ -222,4 +237,207 @@ main{
 
 #history p{
     margin-left: 25px;
+}
+
+/* MOBILE */
+
+#menu_burger{
+    display: none;
+}
+
+#cross{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+
+    /* NAV */
+
+    #logo{
+        margin-left: 16px;
+        margin-top: 16px;
+    }
+
+    nav{
+        margin-top: 0px;
+    }
+
+    #menu_burger{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    #all{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 240px;
+        height: 780px;
+        position: absolute;
+        right: 0;
+        background-color: white;
+    }
+
+    #features_to_about{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 99px;
+        gap: 16px;
+        margin-left: 24px;
+        margin-top: 78px;
+    }
+
+    #company{
+        margin-left: 0;
+    }
+
+    #other{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #other p{
+        margin-left: 0px;
+    }
+
+    #careers{
+        margin-bottom: 16px;
+    }
+
+    /* LOGIN REGISTER */
+
+    #login_register{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 24px;
+        margin-bottom: 444px;
+    }
+
+    #login{
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    #register{
+        border: 1.5px solid #686868;
+        border-radius: 14px;
+        width: 195px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN */
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #mobile_img{
+        display: flex;
+        margin-top: 24px;
+    }
+
+    #desktop_img{
+        display: none;
+    }
+
+    #container_left{
+        width: 343px;
+        margin-top: 47.75px;
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container_left h3{
+        width: 343px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: #151515;
+    }
+
+    #make_remote_work{
+        width: 343px;
+    }
+
+    #container_left p{
+        width: 343px;
+        height: 78px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #686868;
+        margin-top: 16px;
+    }
+
+    #sponsors{
+        width: 343px;
+    }
+
+    #container_left button{
+        border: 0;
+        width: 136px;
+        height: 48px;
+        background-color: #151515;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: -0.222222px;
+        color: #FAFAFA;
+        cursor: pointer;
+        margin-top: 24px;
+    }
+
+    #sponsors{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        margin-top: 48px;
+    }
+
+    /* HISTORY */
+
+    #history{
+        width: 116px;
+        height: 128px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.149126);
+        border-radius: 10px;
+        position: absolute;
+        left: 170px;
+        top: 140px;
+    }
+
+    /* TODO LIST */
+
+    #todo_list{
+        width: 153px;
+        height: 160px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.149126);
+        border-radius: 10px;
+        position: absolute;
+        left: 170px;
+        top: 100px;
+        display: none;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
 }
