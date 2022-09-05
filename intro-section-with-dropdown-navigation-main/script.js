@@ -1,5 +1,6 @@
 let media500            = window.matchMedia("(max-width: 500px)");
-let media1000           = window.matchMedia("(min-width: 1000px)");
+
+let fondObscure         = document.querySelector("#fond_obscure");
 
 let features            = document.querySelector("#features");
 let arrowDownFeatures   = document.querySelector('#arrow_down_features');
@@ -65,6 +66,7 @@ menuBurger.addEventListener("click", () => {
         if(hidden){
             bar.style.display = "none";
             cross.style.display = "flex";
+            fondObscure.style.display = "block";
 
             all.style.display = "flex";
 
@@ -123,7 +125,7 @@ menuBurger.addEventListener("click", () => {
         else{
 
             history.style.top = "130px";
-            
+
             bar.style.display = "flex";
             cross.style.display = "none";
 
@@ -140,6 +142,8 @@ menuBurger.addEventListener("click", () => {
 
             arrowDownCompany.style.display = "flex";
             arrowUpCompany.style.display = "none";
+
+            fondObscure.style.display = "none";
 
             hidden = true;
         }

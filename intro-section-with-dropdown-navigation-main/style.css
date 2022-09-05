@@ -11,6 +11,20 @@
 
 body{
     font-family: 'Epilogue', sans-serif;
+    position: relative;
+    height: 100vh;
+}
+
+#fond_obscure{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    mix-blend-mode: normal;
+    opacity: 0.75;
 }
 
 /* NAV */
@@ -36,6 +50,9 @@ nav p:hover{
     display: flex;
     justify-content: space-between;
     width: 87%;
+    left: 187px;
+    position: absolute;
+    z-index: 2;
 }
 
 #features_to_about{
@@ -64,6 +81,7 @@ nav p:hover{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 #company svg{
@@ -192,10 +210,11 @@ main{
     border-radius: 10px;
     position: absolute;
     left: 113px;
-    top: 70px;
+    top: 35px;
     display: none;
     justify-content: space-evenly;
     flex-direction: column;
+    z-index: 2;
 }
 
 #arrow_up_features{
@@ -229,10 +248,11 @@ main{
     border-radius: 10px;
     position: absolute;
     left: 306px;
-    top: 70px;
+    top: 35px;
     display: none;
     justify-content: space-evenly;
     flex-direction: column;
+    z-index: 2;
 }
 
 #history p{
@@ -243,6 +263,7 @@ main{
 
 #menu_burger{
     display: none;
+    z-index: 2;
 }
 
 #cross{
@@ -254,19 +275,20 @@ main{
     /* NAV */
 
     #logo{
-        margin-left: 16px;
+        margin-right: 16px;
         margin-top: 16px;
     }
 
     nav{
         margin-top: 0px;
+        flex-direction: row-reverse;
     }
 
     #menu_burger{
         display: flex;
         align-items: center;
         position: absolute;
-        right: 16px;
+        left: 16px;
         top: 16px;
     }
 
@@ -276,8 +298,7 @@ main{
         flex-direction: column;
         width: 240px;
         height: 780px;
-        position: absolute;
-        right: 0;
+        left: 0;
         background-color: white;
     }
 
@@ -419,9 +440,7 @@ main{
         background: #FFFFFF;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.149126);
         border-radius: 10px;
-        position: absolute;
-        left: 170px;
-        top: 130px;
+        left: 20px;
     }
 
     /* TODO LIST */
@@ -432,12 +451,8 @@ main{
         background: #FFFFFF;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.149126);
         border-radius: 10px;
-        position: absolute;
-        left: 170px;
+        left: 20px;
         top: 100px;
-        display: none;
-        justify-content: space-evenly;
-        flex-direction: column;
     }
 
 }
