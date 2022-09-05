@@ -271,7 +271,7 @@ main{
     }
 
     #all{
-        display: flex;
+        display: none;
         align-items: flex-start;
         flex-direction: column;
         width: 240px;
@@ -421,7 +421,7 @@ main{
         border-radius: 10px;
         position: absolute;
         left: 170px;
-        top: 140px;
+        top: 130px;
     }
 
     /* TODO LIST */
