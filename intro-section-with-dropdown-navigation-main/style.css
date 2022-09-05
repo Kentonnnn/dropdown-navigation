@@ -196,8 +196,12 @@ main{
     margin-left: 25px;
 }
 
+.todo svg{
+    width: 17px;
+}
+
 .todo p{
-    margin-left: 15px;
+    margin-left: 13px;
 }
 
 /* HISTORY */
